@@ -33,9 +33,10 @@ import DribbbleBrandIcon from "./assets/img/brands/dribbble.png";
 import Project1 from "./assets/img/projects/makeup2.png";
 import Project2 from "./assets/img/projects/zoo.png";
 import Project3 from "./assets/img/projects/recipe.png";
-import Project4 from "./assets/img/projects/p4.webp";
-import Project5 from "./assets/img/projects/p5.webp";
-import Project6 from "./assets/img/projects/p6.webp";
+import Project4 from "./assets/img/projects/weather.png";
+import Project5 from "./assets/img/projects/chat.png";
+import Project6 from "./assets/img/projects/fakeflix3.png";
+import Project7 from "./assets/img/projects/clonetube.png";
 
 // skills images
 import SkillImg1 from "./assets/img/skills/html5.png";
@@ -54,6 +55,8 @@ import SkillImg13 from "./assets/img/skills/firebase.png";
 import SkillImg14 from "./assets/img/skills/postman.png";
 import SkillImg15 from "./assets/img/skills/git.png";
 import SkillImg16 from "./assets/img/skills/aws.png";
+import SkillImg17 from "./assets/img/skills/rest-api-1.svg";
+
 
 // testimonial images
 import TestiImage1 from "./assets/img/testimonials/testimonial-1.webp";
@@ -93,11 +96,11 @@ export const navigation = [
 
 // social
 export const social = [
-  {
-    icon: <FaLinkedin size={20} />,
-    href: "",
-    name: "Linkedin",
-  },
+  // {
+  //   icon: <FaLinkedin size={20} />,
+  //   href: "",
+  //   name: "Linkedin",
+  // },
   {
     icon: <FaGithub size={20} />,
     href: "https://github.com/Sabarish-Chandrasekaran",
@@ -144,54 +147,116 @@ export const brands = [
 export const projectsData = [
   {
     id: "1",
-    image: Project1,
-    name: "Beautify",
-    category: "UI/UX design",
+    image: Project5,
+    name: "Chat 1-on-1",
+    category: "web development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit veniam 1",
-    demo: "https://hackathon-makeup-api.netlify.app/",
-    frontend:
-      "https://github.com/Sabarish-Chandrasekaran/Hackathon-1-Makeup_API",
+      "A single page application like whatsapp where a user can chat and able to create groups. Used socket.io for seamless interaction",
+    demo: "https://chat-1-on-1.netlify.app/",
+    frontend: "https://github.com/Sabarish-Chandrasekaran/chat101-client0",
+    backend: "https://github.com/Sabarish-Chandrasekaran/chat101-server",
     stack: [
       {
-        image: SkillImg1,
+        image: SkillImg4,
       },
       {
-        image: SkillImg2,
+        image: SkillImg5,
       },
       {
-        image: SkillImg3,
+        image: SkillImg6,
+      },
+      {
+        image: SkillImg7,
+      },
+      {
+        image: SkillImg10,
       },
     ],
   },
   {
     id: "2",
-    image: Project2,
-    name: "Online Zoo",
+    image: Project7,
+    name: "Clonetube",
     category: "web development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit veniam 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit veniam 6",
-    demo: "https://promise-zoo-api.netlify.app/",
-    frontend: "https://github.com/Sabarish-Chandrasekaran/Promise-zoo-API",
+      "A web application whose inference is similar to YouTube web application, where user can do basic functionality (subscribe, like, upload videos). Used react-redux for faster response.",
+    demo: "https://clonetube-yt.netlify.app/",
+    frontend: "https://github.com/Sabarish-Chandrasekaran/clonetube-client",
+    backend: "https://github.com/Sabarish-Chandrasekaran/clonetube-server",
     stack: [
       {
-        image: SkillImg1,
+        image: SkillImg4,
       },
       {
-        image: SkillImg2,
+        image: SkillImg5,
       },
       {
-        image: SkillImg3,
+        image: SkillImg6,
+      },
+      {
+        image: SkillImg7,
+      },
+      {
+        image: SkillImg13,
       },
     ],
   },
   {
     id: "3",
+    image: Project6,
+    name: "Fakeflix",
+    category: "web development",
+    description:
+      "A web application whose inference is similar to Netflix web application, where user can filter their genre and can add favorite to the list. Used react-redux for faster response.",
+    demo: "https://fakeflix-netflix-clone.netlify.app/",
+    frontend: "https://github.com/Sabarish-Chandrasekaran/fakeflix-client",
+    backend: "https://github.com/Sabarish-Chandrasekaran/fakeflix-server",
+    stack: [
+      {
+        image: SkillImg4,
+      },
+      {
+        image: SkillImg5,
+      },
+      {
+        image: SkillImg6,
+      },
+      {
+        image: SkillImg7,
+      },
+      {
+        image: SkillImg13,
+      },
+    ],
+  },
+  {
+    id: "4",
+    image: Project4,
+    name: "Weather App",
+    category: "UI Design/Frontend",
+    description:
+      "A React application using openweather API to fetch data to show forecast of any city the world,background of app changes dynamically according to weather conditions and timings.",
+    demo: "https://weather-forecast-dynamic.netlify.app/",
+    frontend: "https://github.com/Sabarish-Chandrasekaran/weather",
+    stack: [
+      {
+        image: SkillImg6,
+      },
+      {
+        image: SkillImg11,
+      },
+      {
+        image: SkillImg17,
+      },
+    ],
+  },
+  {
+    id: "5",
     image: Project3,
     name: "Recipe Book",
-    category: "UI/UX design",
+    category: "UI Design/Frontend",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit veniam 3",
+      "A frontend application using mealDB API to fetch data to show recipe of dishes, user can filter thier recipes based on ingredients. ",
     demo: "https://promise-meal-api.netlify.app/",
     frontend:
       "https://github.com/Sabarish-Chandrasekaran/Promise-TheMealDB-API ",
@@ -205,64 +270,21 @@ export const projectsData = [
       {
         image: SkillImg3,
       },
-    ],
-  },
-  {
-    id: "4",
-    image: Project4,
-    name: "project name 4",
-    category: "branding",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit veniam 4",
-    demo: "/",
-    frontend: "/",
-    stack: [
       {
-        image: SkillImg2,
-      },
-      {
-        image: SkillImg3,
-      },
-      {
-        image: SkillImg4,
-      },
-      {
-        image: SkillImg8,
-      },
-    ],
-  },
-  {
-    id: "5",
-    image: Project5,
-    name: "project name 5",
-    category: "web development",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit veniam 5",
-    demo: "/",
-    frontend: "/",
-    backend: "/",
-    stack: [
-      {
-        image: SkillImg3,
-      },
-      {
-        image: SkillImg4,
-      },
-      {
-        image: SkillImg5,
+        image: SkillImg17,
       },
     ],
   },
   {
     id: "6",
-    image: Project6,
-    name: "project name 6",
-    category: "web development",
+    image: Project1,
+    name: "Beautify",
+    category: "UI Design/Frontend",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit veniam 6",
-    demo: "https://www.youtube.com/",
-    frontend: "/",
-    backend: "/",
+      "A frontend application using makeup API to fetch data to show makeup items, user can filter thier items based on product types. ",
+    demo: "https://hackathon-makeup-api.netlify.app/",
+    frontend:
+      "https://github.com/Sabarish-Chandrasekaran/Hackathon-1-Makeup_API",
     stack: [
       {
         image: SkillImg1,
@@ -274,7 +296,31 @@ export const projectsData = [
         image: SkillImg3,
       },
       {
-        image: SkillImg4,
+        image: SkillImg17,
+      },
+    ],
+  },
+  {
+    id: "7",
+    image: Project2,
+    name: "Online Zoo",
+    category: "UI Design/Frontend",
+    description:
+      "A frontend application using zoo-animal API to fetch data to show different kinds of species, it gives user, to experience online safari ride.",
+    demo: "https://promise-zoo-api.netlify.app/",
+    frontend: "https://github.com/Sabarish-Chandrasekaran/Promise-zoo-API",
+    stack: [
+      {
+        image: SkillImg1,
+      },
+      {
+        image: SkillImg2,
+      },
+      {
+        image: SkillImg3,
+      },
+      {
+        image: SkillImg17,
       },
     ],
   },
@@ -286,13 +332,10 @@ export const projectsNav = [
     name: "all",
   },
   {
-    name: "UI/UX Design",
-  },
-  {
     name: "web development",
   },
   {
-    name: "branding",
+    name: "UI Design/Frontend",
   },
 ];
 
@@ -343,7 +386,7 @@ export const services = [
       <>
         <SiFirebase />
         &nbsp;&nbsp;Firbase
-        </>
+      </>,
     ],
     name: "Other Technical Skills",
     description: "",
